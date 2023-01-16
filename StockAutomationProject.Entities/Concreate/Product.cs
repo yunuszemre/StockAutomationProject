@@ -10,6 +10,10 @@ namespace StockAutomationProject.Entities.Concreate
 {
     public class Product : BaseEntity
     {
+        public Product()
+        {
+            this.OrderDetails = new List<OrderDetail>();
+        }
         public string ProductName { get; set; }
 
         public string ProductDescription { get; set; }

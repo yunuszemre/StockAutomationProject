@@ -9,6 +9,10 @@ namespace StockAutomationProject.Entities.Concreate
 {
     public class Category : BaseEntity
     {
+        public Category()
+        {
+            this.Products = new List<Product>();
+        }
         public string CategoryName { get; set; }
 
         public string Description { get; set; }

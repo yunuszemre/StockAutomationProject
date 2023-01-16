@@ -9,5 +9,21 @@ namespace StockAutomationProject.Entities.Concreate
 {
     public class Supplier:BaseEntity
     {
+        public Supplier()
+        {
+            this.Products= new List<Product>();
+        }
+        public string SupplierName { get; set; }
+        public string SupplierDescription { get; set; }
+
+        public string? Adress { get; set; }
+
+        public string? Phone { get; set; }
+
+        public string? Email { get; set; }
+
+        public List<Product> Products { get; set; }
+
+
     }
 }
